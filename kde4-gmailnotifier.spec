@@ -12,7 +12,11 @@ Group:		X11/Libraries
 Source0:	%{orgname}-r%{version}.tar.bz2
 # Source0-md5:	7f9bbd0bf9f1c5d9da7fd00263afc7c0
 URL:		http://gmailnotifier.googlecode.com/
+BuildRequires:	QtNetwork-devel
+BuildRequires:	QtSvg-devel
+BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.6.1-2
+BuildRequires:	kde4-kdelibs-devel
 BuildRequires:	qt4-build >= %{qt_ver}
 BuildRequires:	qt4-qmake >= %{qt_ver}
 BuildRequires:	rpmbuild(macros) >= 1.293
