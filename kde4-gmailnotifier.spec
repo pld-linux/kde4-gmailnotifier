@@ -1,16 +1,16 @@
 %define		orgname		gmailnotifier
-%define		qt_ver		4.5.1
-%define		snap		141
+%define		qt_ver		4.5.2
+%define		snap		144
 
 Summary:	Gmail Notifier, a KDE 4 plasmoid
 Name:		kde4-%{orgname}
 Version:	%{snap}
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		X11/Libraries
 # svn co http://gmailnotifier.googlecode.com/svn/trunk/ gmailnotifier
 Source0:	%{orgname}-r%{version}.tar.bz2
-# Source0-md5:	7f9bbd0bf9f1c5d9da7fd00263afc7c0
+# Source0-md5:	7b7387aa2304e2fd906f2db0cf694608
 URL:		http://gmailnotifier.googlecode.com/
 BuildRequires:	QtNetwork-devel
 BuildRequires:	QtSvg-devel
