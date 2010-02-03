@@ -1,6 +1,7 @@
 %define		orgname		gmailnotifier
 %define		qtver		4.5.2
 %define		snap		144
+%define		kdever		4.3.5
 
 Summary:	Gmail Notifier, a KDE 4 plasmoid
 Name:		kde4-%{orgname}
@@ -12,11 +13,11 @@ Group:		X11/Libraries
 Source0:	%{orgname}-r%{version}.tar.bz2
 # Source0-md5:	7b7387aa2304e2fd906f2db0cf694608
 URL:		http://gmailnotifier.googlecode.com/
-BuildRequires:	QtNetwork-devel
-BuildRequires:	QtSvg-devel
-BuildRequires:	automoc4
-BuildRequires:	cmake >= 2.6.1-2
-BuildRequires:	kde4-kdelibs-devel
+BuildRequires:	QtNetwork-devel >= %{qtver}
+BuildRequires:	QtSvg-devel >= %{qtver}
+BuildRequires:	automoc4 >= 0.9.88
+BuildRequires:	cmake >= 2.6.3
+BuildRequires:	kde4-kdelibs-devel >= %{kdever}
 BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.293
